@@ -89,8 +89,13 @@ python src/train.py
 python tests/visualize.py
 ```
 
-### Скрипт использует алгоритм **t-SNE** для уменьшения размерности векторов до 2D и строит график.
-<img width="1200" height="800" alt="Figure_22" src="https://github.com/user-attachments/assets/daf44d2a-6847-4356-aa4d-13bf68bfb675" />
+**Скрипт использует алгоритм **t-SNE** для уменьшения размерности векторов до 2D и строит график.**
+Отчетливо видны области семантически схожих слов.
+<img width="1512" height="909" alt="Frame 50" src="https://github.com/user-attachments/assets/d9147fd2-cb9a-4bb5-bce1-e4892b525ea8" />
+Также, несмотря на нелинейное снижение размерности (методом t-SNE) хорошо прослеживаются направления семантических градаций.
+<img width="1512" height="909" alt="Frame 51" src="https://github.com/user-attachments/assets/f32d97ee-3580-4c21-b88c-c7dd4c1985e3" />
+<img width="1512" height="909" alt="Frame 52" src="https://github.com/user-attachments/assets/eab3ad67-02d7-4c32-861e-3a5b06eff797" />
+
 
 ## Детали реализации
 
