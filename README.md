@@ -20,24 +20,22 @@
 word2vec-skipgram-numpy/
 │
 ├── data/
-│   └── ruwiki_sample.txt           # Пример текстового корпуса
+│   └── ruwiki_sample.txt        # корпус (или часть корпуса для примеров)
 │
 ├── src/
-│   ├── preprocess.py               # Токенизация, очистка текста, построение словаря
-│   ├── dataset.py                  # Генерация пар (target, context)
-│   ├── model.py                    # Реализация Skip-gram модели на NumPy
-│   ├── train.py                    # Основной скрипт для обучения
-│   └── utils.py                    # Вспомогательные функции (сохранение/загрузка эмбеддингов)
-│
-├── notebooks/
-│   └── demo.ipynb                  # Jupyter Notebook для демонстрации обучения
+│   ├── preprocess.py             # токенизация, словарь, преобразование слов в индексы
+│   ├── dataset.py                # генерация пар (target, context) для skip-gram
+│   ├── model.py                  # реализация Skip-gram на NumPy
+│   ├── train.py                  # цикл обучения
+│   └── utils.py                  # функции: сохранение/загрузка эмбеддингов, косинусное сходство
 │
 ├── tests/
-│   └── visualize.py                # Скрипт для визуализации эмбеддингов
+│   └── visualize.py             # базовый тест: визуализация эмбеддингов в сниженной размерности
 │
-├── requirements.txt                # Список зависимостей
-├── README.md                       # Этот файл
+├── requirements.txt
+├── README.md
 └── LICENSE
+
 ```
 
 
