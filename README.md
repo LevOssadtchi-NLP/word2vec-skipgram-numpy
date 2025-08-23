@@ -46,7 +46,7 @@ word2vec-skipgram-numpy/
 1.  **Клонируйте репозиторий:**
 
     ```bash
-    git clone https://github.com/your-username/word2vec-skipgram-numpy.git
+    git clone https://github.com/LevOssadtchi-NLP/word2vec-skipgram-numpy
     cd word2vec-skipgram-numpy
     ```
 
