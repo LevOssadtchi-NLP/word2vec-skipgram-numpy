@@ -20,7 +20,9 @@ $$L(\\theta) = \\prod\_{w \\in T} \\prod\_{c \\in C(w)} P(c | w)$$
 
 Эту вероятность вычисляют с помощью функции **Softmax**:
 
-$$P(c | w) = \\frac{\\exp(v*c^T v*w)}{\\sum*{w' \\in V} \\exp(v*{w'}^T v\_w)}$$
+$$
+P(c \mid w) = \frac{\exp(\mathbf{v}_c^\top \mathbf{v}_w)}{\sum\limits_{w' \in V} \exp(\mathbf{v}_{w'}^\top \mathbf{v}_w)}
+$$
 
   - $\\mathbf{v}\_w$ — вектор целевого слова $w$.
   - $\\mathbf{v}\_c$ — вектор контекстного слова $c$.
