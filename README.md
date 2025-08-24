@@ -20,14 +20,15 @@
 word2vec-skipgram-numpy/
 │
 ├── data/
-│   └── ruwiki_sample.txt        # корпус (или часть корпуса для примеров)
+│   ├── ruwiki_sample.txt         # корпус
+│   └── ruwiki_sample_subset.txt  # часть корпуса для примера
 │
 ├── src/
 │   ├── preprocess.py             # токенизация, словарь, преобразование слов в индексы
 │   ├── dataset.py                # генерация пар (target, context) для skip-gram
 │   ├── model.py                  # реализация Skip-gram на NumPy
 │   ├── train.py                  # цикл обучения
-    ├── utils.py                  # функции: сохранение/загрузка эмбеддингов, косинусное сходство
+│   ├── utils.py                  # функции: сохранение/загрузка эмбеддингов, косинусное сходство
 │   └── artifacts/
 │       └── embeddings.csv
 │
