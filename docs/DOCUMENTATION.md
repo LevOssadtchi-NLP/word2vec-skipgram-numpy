@@ -20,9 +20,7 @@ $$L(\\theta) = \\prod\_{w \\in T} \\prod\_{c \\in C(w)} P(c | w)$$
 
 Эту вероятность вычисляют с помощью функции **Softmax**:
 
-$$
-P(c \mid w) = \frac{\exp(\mathbf{v}_c^\top \mathbf{v}_w)}{\sum\limits_{w' \in V} \exp(\mathbf{v}_{w'}^\top \mathbf{v}_w)}
-$$
+$$P(c | w) = \frac{\exp(\mathbf{v}_c^T \mathbf{v}_w)}{\sum_{w' \in V} \exp(\mathbf{v}_{w'}^T \mathbf{v}_w)}$$
 
   - $\\mathbf{v}\_w$ — вектор целевого слова $w$.
   - $\\mathbf{v}\_c$ — вектор контекстного слова $c$.
@@ -37,7 +35,7 @@ $$
 
 Функция потерь для каждого обучающего шага теперь выглядит так:
 
-$$L = -\\log(\\sigma(\\mathbf{v}*c^T \\mathbf{v}*w)) - \\sum*{i=1}^{k} \\log(\\sigma(-\\mathbf{v}*{n\_i}^T \\mathbf{v}\_w))$$
+$$L = -\log(\sigma(\mathbf{v}_c^T \mathbf{v}_w)) + \sum_{i=1}^{k} \log(\sigma(-\mathbf{v}_{n_i}^T \mathbf{v}_w))$$
 
 Где:
 
