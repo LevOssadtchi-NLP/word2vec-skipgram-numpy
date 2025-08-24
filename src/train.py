@@ -20,6 +20,7 @@ def main():
 
     # Препроцессинг
     preprocessor = Preprocessor(vocab_size=10000)
+    text = preprocessor.clean_text(text)
     tokenized = preprocessor.tokenize(text)[:500000]
     preprocessor.build_vocab(tokenized)
     encoded = preprocessor.encode(tokenized)
