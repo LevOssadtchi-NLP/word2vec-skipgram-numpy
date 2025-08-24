@@ -27,7 +27,9 @@ word2vec-skipgram-numpy/
 │   ├── dataset.py                # генерация пар (target, context) для skip-gram
 │   ├── model.py                  # реализация Skip-gram на NumPy
 │   ├── train.py                  # цикл обучения
-│   └── utils.py                  # функции: сохранение/загрузка эмбеддингов, косинусное сходство
+    ├── utils.py                  # функции: сохранение/загрузка эмбеддингов, косинусное сходство
+│   └── artifacts/
+│       └── embeddings.csv
 │
 ├── tests/
 │   └── visualize.py              # базовый тест: визуализация эмбеддингов в сниженной размерности
